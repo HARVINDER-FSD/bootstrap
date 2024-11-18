@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Logos and Footer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for scrolling animation */
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .logo-scroller {
+      overflow: hidden;
+      position: relative;
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .logo-track {
+      display: flex;
+      gap: 30px;
+      animation: scroll 25s linear infinite;
+    }
+
+    .logo-track img {
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Scrolling Logo Section -->
+  <div class="logo-scroller">
+    <div class="container">
+      <div class="d-flex logo-track">
+        <!-- Replace these with your logo URLs -->
+        <img src="https://via.placeholder.com/120x50?text=Logo1" alt="Logo 1">
+        <img src="https://via.placeholder.com/120x50?text=Logo2" alt="Logo 2">
+        <img src="https://via.placeholder.com/120x50?text=Logo3" alt="Logo 3">
+        <img src="https://via.placeholder.com/120x50?text=Logo4" alt="Logo 4">
+        <img src="https://via.placeholder.com/120x50?text=Logo5" alt="Logo 5">
+        <img src="https://via.placeholder.com/120x50?text=Logo6" alt="Logo 6">
+        <!-- Duplicate for smooth scrolling -->
+        <img src="https://via.placeholder.com/120x50?text=Logo1" alt="Logo 1">
+        <img src="https://via.placeholder.com/120x50?text=Logo2" alt="Logo 2">
+        <img src="https://via.placeholder.com/120x50?text=Logo3" alt="Logo 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-primary text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Us -->
+        <div class="col-md-4 mb-4">
+          <h5 class="border-bottom pb-2">Contact Us</h5>
+          <p>Anand Environmental Consultants Pvt. Ltd.</p>
+          <p>D - 906, Swati Clover, Shilaj Circle, S.P. Ring Road, Ahmedabad - 380 059.</p>
+          <p><strong>Phone:</strong> +91 98250 11748</p>
+          <p><strong>Email:</strong> <a href="mailto:rakeshshah2003@yahoo.com" class="text-white">rakeshshah2003@yahoo.com</a></p>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="col-md-4 mb-4">
+          <h5 class="border-bottom pb-2">Subscribe to Updates</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Sign Up</button>
+          </form>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-4 mb-4">
+          <h5 class="border-bottom pb-2">Follow Us</h5>
+          <div class="d-flex gap-3">
+            <a href="#"><img src="https://via.placeholder.com/40x40?text=F" alt="Facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/40x40?text=T" alt="Twitter"></a>
+            <a href="#"><img src="https://via.placeholder.com/40x40?text=L" alt="LinkedIn"></a>
+            <a href="#"><img src="https://via.placeholder.com/40x40?text=Y" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

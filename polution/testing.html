@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Anand Environmental Consultants provides ISO-certified environmental consultancy services.">
+  <meta name="keywords" content="environmental consultancy, ISO 9001:2008, sustainability, environmental services">
+  <title>Anand Environmental Consultants</title>
+
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Link to Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Link to AOS (Animate on Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+#nav{
+  background: linear-gradient(to right, #38c2deb5, #6fd8efcc), url(./img/ws10.png) center center / cover;
+}
+#brand {
+align-items: center;
+}
+#brand h2{
+  font-size: 20px;
+}
+.custom-header {
+
+     background-repeat: no-repeat;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .custom-header h1 {
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .custom-header h2 {
+      font-size: 30px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-nav .nav-link {
+      margin-right: 15px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(156, 65, 65);
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #5cb3ff;
+      border-bottom: 2px solid #5cb3ff;
+    }
+
+    .information {
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+      border-radius: 5px;
+    }
+
+    .information h2 {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .information p {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    footer {
+  background-color: #222; /* Simple solid background color */
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #5cb3ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#social-icons a {
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social-icons a:hover {
+  transform: scale(1.1);
+}
+
+footer form input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+footer form input:focus {
+  outline: none;
+  border: 2px solid #5cb3ff;
+}
+
+footer button {
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  footer .row > div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #social-icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .container {
+    padding: 10px;
+  }
+
+  footer h5 {
+    font-size: 1.1rem;
+  }
+
+  footer p, footer form input {
+    font-size: 0.9rem;
+  }
+
+  footer form input {
+    width: 100%;
+  }
+}
+
+
+    @media (max-width:768px) {
+      #brand h2{
+font-size: 15px;
+      }
+      #ban{
+        height: 268px;
+      }
+      .information h2{
+        font-size: 23px;
+      }
+      .information p{
+        text-align: center;
+      }
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+#fot{
+  background-color:#093e76;
+}
+    .logo-scroller {
+      overflow: hidden;
+      position: relative;
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+
+    .logo-track {
+      display: flex;
+      gap: 30px;
+      animation: scroll 25s linear infinite;
+    }
+
+    .logo-track img {
+      height: 50px;
+    }
+    #icon{
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex text-dark " href="#" id="brand" >
+        <img src="./img/logo.png" alt="" height="100px" >
+        <h2>Anand Environmental Consultants
+          <br>Environmental Consultants (P) Ltd.</h2>
+        <p> </p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark " href="#"><strong>Home</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>History</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Services</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Clients</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Team</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Gallery</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Contact Us</strong> </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Partners Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./img/manpower.jpg" class="d-block w-100" alt="Slide 1" height="550px" id="ban">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/laboratory.jpg" class="d-block w-100" alt="Slide 2" height="550px" id="ban">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/Untitled.jpg" class="d-block w-100" alt="Slide 3" height="550px" id="ban">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./img/consultancy.jpg" class="d-block w-100" alt="Slide 4" height="550px" id="ban">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Information Section -->
+  <section class="information mt-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Welcome to ANAND ENVIRONMENTAL CONSULTANTS PVT. LTD.</h2>
+      <p>
+        Active since 1978 in India, Afghanistan, Bahrain, Bangladesh, Bhutan and Uganda. An ISO 9001:2008, ISO/IEC:
+        17205:2005, Quality Council of India (NABET) certified company. Provided services to the Royal Government of
+        Bhutan. MOU with Ugandan company to provide services in Uganda. Guided by US educated and experienced
+        management. Technical staff of over 20 people. In-house laboratory facilities for treatability studies.
+        Pollution control facilities, equipment and services provided to over 500 industries. Pollution control
+        facilities even for 1,00,00,000 litres per day wastewater or as low as 1000 litres per day. Technology adopted
+        to developing country needs. Equipment, systems and processes easy to understand, operate and maintain.
+        Recycling of treated wastewater possible depending on the type of unit. Assistance in setting up of associated
+        laboratory facilities. Training of local manpower to take over operation and maintenance. Environmental Impact
+        Assessment studies. Carrying out of Environmental Audits / Due Diligence studies. Cleaner Production assignments
+        to reduce pollution at source. Assisting industries with respect to their legal issues, especially related to
+        the National Green Tribunal, with the competency to present facts effectively to the jury members of NGT.
+      </p>
+    </div>
+  </section>
+
+ <!-- Scrolling Logo Section -->
+ <div class="logo-scroller">
+  <div class="container">
+    <div class="d-flex logo-track">
+      <!-- Replace these with your logo URLs -->
+      <img src="./img/akshaya-patra.jpg" alt="Logo 1">
+      <img src="./img/BASF.jpg" alt="Logo 2">
+      <img src="./img/baxter.jpg" alt="Logo 3">
+      <img src="./img/Bayer.jpg" alt="Logo 4">
+      <img src="./img/Coca-cola.jpg" alt="Logo 5">
+      <img src="./img/Credo.jpg" alt="Logo 6">
+      <!-- Duplicate for smooth scrolling -->
+      <img src="./img/Du-Point.jpg" alt="Logo 7">
+      <img src="./img/Dyenamic.jpg" alt="Logo 8">
+      <img src="./img/emcure.jpg" alt="Logo 9">
+      <img src="./img/GFL.jpg" alt="Logo 10">
+      <img src="./img/Glaxo.jpg" alt="Logo 11">
+      <img src="./img/GMDC.jpg" alt="Logo 12">
+      <img src="./img/Grasim.jpg" alt="Logo 13">
+      <img src="./img/GSEC.jpg" alt="Logo 14">
+      <img src="./img/havmor-2017.jpg" alt="Logo 15">
+      <img src="./img/INTAS.jpg" alt="Logo 16">
+      <!-- Duplicate for smooth scrolling -->
+      <img src="./img/IRPL.jpg" alt="Logo 17">
+      <img src="./img/JBM-Group.jpg" alt="Logo 18">
+      <img src="./img/Krishna.jpg" alt="Logo 19">
+      <img src="./img/Maize-Products.jpg" alt="Logo 20">
+      <img src="./img/McCain-Foods.jpg" alt="Logo 21">
+      <img src="./img/MOL.jpg" alt="Logo 22">
+      <img src="./img/Nirma.jpg" alt="Logo 23">
+      <img src="./img/np.png" alt="Logo 24">
+      <img src="./img/Quaker.jpg" alt="Logo 25">
+      <img src="./img/Revocoat.jpg" alt="Logo 26">
+      <!-- Duplicate for smooth scrolling -->
+      <img src="./img/Rexroth.jpg" alt="Logo 27">
+      <img src="./img/steelcast-2017 (1).png" alt="Logo 28">
+      <img src="./img/Torrent-power.jpg" alt="Logo 29">
+      <img src="./img/Zydus.jpg" alt="Logo 30">
+      <img src="./img/akshaya-patra.jpg" alt="Logo 31">
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Us -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="border-bottom pb-2">Contact Us</h5>
+        <p><strong>Anand Environmental Consultants Pvt. Ltd.</strong></p>
+        <address>
+          D-906, Swati Clover, Shilaj Circle, S.P. Ring Road,<br>
+          Ahmedabad - 380 059.
+        </address>
+        <p><strong>Phone:</strong> <a href="tel:+919825011748" class="text-white">+91 98250 11748</a></p>
+        <p><strong>Email:</strong> <a href="mailto:rakeshshah2003@yahoo.com" class="text-white">rakeshshah2003@yahoo.com</a></p>
+      </div>
+
+      <!-- Subscribe Section -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="border-bottom pb-2">Subscribe to Updates</h5>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-lg-4 col-md-12 mb-4 text-center">
+        <h5 class="border-bottom pb-2">Follow Us</h5>
+        <div class="d-flex justify-content-center gap-4 mt-3" id="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x" style="color: #123d99;"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter fa-2x" style="color: #1DA1F2;"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x" style="color: #113447;"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube fa-2x" style="color: #FF0000;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="container" id="fot">
+ <div class="text-center mt-3">
+    <p class="m-0">&copy; 2024 Anand Environmental Consultants Pvt. Ltd. All Rights Reserved.</p>
+  </div>
+</footer>
+
+ 
+</div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
