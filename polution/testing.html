@@ -22,15 +22,18 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
+      background-color: #7e8381;
     }
 #nav{
-  background: linear-gradient(to right, #38c2deb5, #6fd8efcc), url(./img/ws10.png) center center / cover;
-}
+  background: #7e8381;}
 #brand {
 align-items: center;
 }
 #brand h2{
   font-size: 20px;
+}
+#curs{
+  background: linear-gradient( rgba(0, 0, 0, 0.863) rgba(0, 0, 0, 0.74));
 }
 .custom-header {
 
@@ -83,7 +86,7 @@ align-items: center;
     }
 
     footer {
-  background-color: #222; /* Simple solid background color */
+  background-color:#000000; /* Simple solid background color */
   color: white;
   padding: 20px 0;
 }
@@ -172,10 +175,7 @@ font-size: 15px;
         transform: translateX(-100%);
       }
     }
-#fot{
-  background-color:#093e76;
-}
-    .logo-scroller {
+  .logo-scroller {
       overflow: hidden;
       position: relative;
       background-color: #f8f9fa;
@@ -194,14 +194,33 @@ font-size: 15px;
     #icon{
       font-size: 50px;
     }
+    .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+        z-index: 1;
+    }
+
+    .carousel-item img {
+        position: relative;
+        z-index: 0;
+    }
+
+    .carousel-caption {
+        position: relative;
+        z-index: 2; /* Ensures the caption is above the gradient overlay */
+    }
   </style>
 </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark  " id="nav">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex text-dark " href="#" id="brand" >
+      <a class="navbar-brand d-flex text-white " href="#" id="brand" >
         <img src="./img/logo.png" alt="" height="100px" >
         <h2>Anand Environmental Consultants
           <br>Environmental Consultants (P) Ltd.</h2>
@@ -212,13 +231,13 @@ font-size: 15px;
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-dark " href="#"><strong>Home</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>History</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Services</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Clients</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Team</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Gallery</strong> </a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#"><strong>Contact Us</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white " href="#"><strong class="fs-5">Home</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">History</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">Services</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">Clients</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">Team</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">Gallery</strong> </a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"><strong class="fs-5">Contact Us</strong> </a></li>
         </ul>
       </div>
     </div>
@@ -226,36 +245,40 @@ font-size: 15px;
   <!-- Partners Carousel -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="./img/manpower.jpg" class="d-block w-100" alt="Slide 1" height="550px" id="ban">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <div class="carousel-overlay"></div>
+            <img src="./img/manpowers.avif" class="d-block w-100" alt="Slide 1" height="750px" id="ban">
+            <div class="carousel-caption d-none d-md-block">  
+            </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/laboratory.jpg" class="d-block w-100" alt="Slide 2" height="550px" id="ban">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-overlay"></div>
+            <img src="./img/laboratory.jpg" class="d-block w-100" alt="Slide 2" height="750px" id="ban">
+            <div class="carousel-caption d-none d-md-block">   
+            </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/Untitled.jpg" class="d-block w-100" alt="Slide 3" height="550px" id="ban">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-overlay"></div>
+            <img src="./img/computerAppliances.jpg" class="d-block w-100" alt="Slide 3" height="750px" id="ban">
+            <div class="carousel-caption d-none d-md-block">     
+            </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./img/consultancy.jpg" class="d-block w-100" alt="Slide 4" height="550px" id="ban">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-overlay"></div>
+            <img src="./img/consultancy.jpg" class="d-block w-100" alt="Slide 4" height="750px" id="ban">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
         </div>
-      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
   <!-- Information Section -->
   <section class="information mt-5">
     <div class="container">
@@ -321,12 +344,12 @@ font-size: 15px;
 </div>
 
 <!-- Footer Section -->
-<footer class="bg-primary text-white py-4">
+<footer class=" text-white py-4">
   <div class="container">
     <div class="row">
       <!-- Contact Us -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h5 class="border-bottom pb-2">Contact Us</h5>
+      <div class="col-lg-4 col-md-6 mb-4 text-justify">
+        <h5 class="border-bottom pb-2 ">Contact Us</h5>
         <p><strong>Anand Environmental Consultants Pvt. Ltd.</strong></p>
         <address>
           D-906, Swati Clover, Shilaj Circle, S.P. Ring Road,<br>
@@ -352,7 +375,7 @@ font-size: 15px;
 
       <!-- Social Media -->
       <div class="col-lg-4 col-md-12 mb-4 text-center">
-        <h5 class="border-bottom pb-2">Follow Us</h5>
+        <h5 class="border-bottom pb-2 text-justify">Follow Us</h5>
         <div class="d-flex justify-content-center gap-4 mt-3" id="social-icons">
           <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fa-2x" style="color: #123d99;"></i></a>
           <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter fa-2x" style="color: #1DA1F2;"></i></a>
