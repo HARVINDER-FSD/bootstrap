@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Flip Cards with Sliders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .flip-card {
+            perspective: 1000px;
+            margin-bottom: 20px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: transform 0.6s ease-in-out;
+        }
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .flip-card-front {
+            background-color: #fff;
+        }
+        .flip-card-back {
+            background-color: #007bff;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Three Flip Cards with Sliders</h1>
+        <div class="row justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="card1">
+                        <div class="flip-card-front">
+                            <img src="./img/images (1).jpg" class="card-img-top" alt="Blog Image">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, tempore quod nemo sunt ut totam sed quasi aut provident delectus .</p>
+                                <button class="btn btn-primary flip-btn">Flip to Back</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/ocean2.jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/ocean3.jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/ocen4.jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, beatae!</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-danger back-button">Back to Front</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="card2">
+                        <div class="flip-card-front">
+                            <img src="./img/images.jpg" class="card-img-top" alt="Blog Image">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, tempore quod nemo sunt ut totam sed quasi aut provident delectus .</p>
+                                <button class="btn btn-primary flip-btn">Flip to Back</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/exam3.jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/exam4.jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/exam5.jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, beatae!</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-danger back-button">Back to Front</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner" id="card3">
+                        <div class="flip-card-front">
+                            <img src="./img/montain.jpg" class="card-img-top" alt="Blog Image">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur, tempore quod nemo sunt ut totam sed quasi aut provident delectus .</p>
+                                <button class="btn btn-primary flip-btn">Flip to Back</button>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/montain1.jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/montain2.jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/mountain3.jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, beatae!</p>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-danger back-button">Back to Front</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add flip functionality for all cards
+        document.querySelectorAll('.flip-card').forEach((cardWrapper) => {
+            const card = cardWrapper.querySelector('.flip-card-inner');
+            const flipButton = cardWrapper.querySelector('.flip-btn');
+            const backButton = cardWrapper.querySelector('.back-button');
+
+            // Flip to Back
+            flipButton.addEventListener('click', () => {
+                card.style.transform = 'rotateY(180deg)';
+            });
+
+            // Flip Back to Front
+            backButton.addEventListener('click', () => {
+                card.style.transform = 'rotateY(0deg)';
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
